@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
   Autores.init({
     FirstName: DataTypes.STRING,
     LastName: DataTypes.STRING,
-    birthYear: DataTypes.INTEGER,
+    BirthYear: DataTypes.INTEGER,
     Nationality: DataTypes.STRING,
   }, {
     sequelize,
