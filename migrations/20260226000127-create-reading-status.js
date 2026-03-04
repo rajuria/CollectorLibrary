@@ -10,6 +10,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       BookID: {
+        references: {model: 'Books',key: 'id'},
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       Status: {
