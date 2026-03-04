@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class Books extends Model {
     static associate(models) {
       Books.belongsTo(models.Autores, { foreignKey: 'AuthorID', as: 'Author' });
-      Books.hasOne(models.ReadingStatuses, {foreignKey: 'BookID',as: 'ReadingStatuses'});
+      Books.hasOne(models.ReadingStatus, {foreignKey: 'BookID',as: 'ReadingStatuses'});
     }
   }
   Books.init({
