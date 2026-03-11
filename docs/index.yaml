@@ -1,0 +1,13 @@
+openapi: 3.0.0
+info:
+  title: CollectorLibrary API
+  description: API documentation for the CollectorLibrary project.
+  version: 1.0.983
+
+servers:
+- url: http://localhost:3000
+  description: Local development server
+
+paths:
+  /authors:
+    $ref: ./paths/authors.yaml
