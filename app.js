@@ -10,9 +10,9 @@ var usersRouter = require('./routes/users');
 var routeRouter = require('./routes/routesTest');
 var dbTestRouter = require('./routes/dbTest');
 var authorsRouter = require('./routes/authors');
+var booksRouter = require('./routes/books');
 
 var app = express();
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -28,6 +28,7 @@ app.use('/users', usersRouter);
 app.use('/TestRoute', routeRouter);
 app.use('/dbTest', dbTestRouter);
 app.use('/api/authors', authorsRouter);
+app.use('/api/books', booksRouter);
 
 swaggerSetup(app);
 // catch 404 and forward to error handler
